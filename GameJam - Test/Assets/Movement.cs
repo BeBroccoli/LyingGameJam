@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    public float speed;
+    private Rigidbody rb;
+    public static float speed = 5;
     private float moveInputX;
     private float moveInputY;
     private bool isRight;
@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
     
 
