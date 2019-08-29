@@ -23,13 +23,13 @@ public class Gizmo_Generate : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(center,size);
+        Gizmos.DrawSphere(transform.position + center,size);
       
     }
 
     void SpawnNewEnemy()
     {
-        Vector3 pos = center + new Vector3(Random.Range((float)-2.5, (float)2.5), Random.Range(-3, -3));
+        Vector3 pos = center + new Vector3(Random.Range(transform.position.x + -size + (float)0.5, transform.position.x + size + (float)-0.5), Random.Range(transform.position.y + -size, transform.position.y + -size));
 
         Instantiate(enemyPrefab, pos, Quaternion.identity);
     }
