@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float speed;
+    public static float speed = 5;
     private float moveInputX;
     private float moveInputY;
     private bool isRight;
