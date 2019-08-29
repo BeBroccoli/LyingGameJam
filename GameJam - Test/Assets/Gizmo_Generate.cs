@@ -22,7 +22,7 @@ public class Gizmo_Generate : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.clear;
         Gizmos.DrawSphere(transform.position + center,size);
       
     }
