@@ -6,6 +6,7 @@ public class Moving_Object : MonoBehaviour
 {
     public static bool drive = false;
     public float speed;
+    public float boundaries;
     Rigidbody2D rb;
 
     void Start()
@@ -23,7 +24,7 @@ public class Moving_Object : MonoBehaviour
         }
 
 
-        if (rb.velocity.y <= -10)
+        if (rb.velocity.y <= boundaries)
         {
             Destroy(this);
         }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class WatchMeNayNay : MonoBehaviour
 {
-    public float speed = 5f;
-
+    public bool isSprite = false;
     private Transform cursor;
 
 
@@ -23,6 +22,14 @@ public class WatchMeNayNay : MonoBehaviour
 
 
         transform.LookAt(cursor);
+
+        if (isSprite == true)
+        {
+            if (true)
+            {
+
+            }
+        }
     }
     
 }
