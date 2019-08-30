@@ -13,7 +13,6 @@ public class Gizmo_Generate : MonoBehaviour
     {
         if (Enemy_Spawn.isDead == true)
         {
-            Debug.Log("Something actually happend!!!!");
             SpawnNewEnemy();
             Enemy_Spawn.isDead = false;
         }
