@@ -21,10 +21,7 @@ public class Follow_Target : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
-        if (Enemy_Spawn.isDead == true)
-        {
-            
-        }
+       
     }
 
     

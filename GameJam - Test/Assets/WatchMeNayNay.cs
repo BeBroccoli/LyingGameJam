@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class WatchMeNayNay : MonoBehaviour
 {
-    public bool isSprite = false;
     private Transform cursor;
-
+    public static Quaternion quaternion;
 
     private void Start()
     {
         cursor = GameObject.FindGameObjectWithTag("Cursor").GetComponent<Transform>();
-
+        quaternion = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
     }
 
     // Update is called once per frame
@@ -20,16 +19,9 @@ public class WatchMeNayNay : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") + (Input.GetAxis("Mouse Y"));
         float mouseY = Input.GetAxis("Mouse Y") + (Input.GetAxis("Mouse X"));
 
+        quaternion = transform.rotation;
 
         transform.LookAt(cursor);
-
-        if (isSprite == true)
-        {
-            if (true)
-            {
-
-            }
-        }
     }
     
 }

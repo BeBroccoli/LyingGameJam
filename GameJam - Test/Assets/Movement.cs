@@ -15,6 +15,9 @@ public class Movement : MonoBehaviour
     private float cooldown = 1;
 
 
+    public bool isSprite = false;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,5 +38,26 @@ public class Movement : MonoBehaviour
         moveInputX = Input.GetAxisRaw("Horizontal");
         moveInputY = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(moveInputX * speed, moveInputY * speed);
+
+
+        if (isSprite == true)
+        {
+            if (WatchMeNayNay.quaternion.y <= -90)
+            {
+                transform.Rotate(Vector3.up * 180);
+            }
+            else if (WatchMeNayNay.quaternion.y >= 90)
+            {
+                transform.Rotate(Vector3.up * 180);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+
+        }
+
+
+
     }
 }

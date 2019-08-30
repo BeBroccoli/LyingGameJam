@@ -6,7 +6,6 @@ public class Moving_Object : MonoBehaviour
 {
     public static bool drive = false;
     public float speed;
-    public float boundaries;
     Rigidbody2D rb;
 
     void Start()
@@ -21,12 +20,6 @@ public class Moving_Object : MonoBehaviour
         {
             Debug.Log("Works");
             transform.Translate(0, -speed, 0);
-        }
-
-
-        if (rb.velocity.y <= boundaries)
-        {
-            Destroy(this);
         }
     }
 }

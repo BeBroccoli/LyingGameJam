@@ -10,6 +10,7 @@ public class Move_Object_Colli : MonoBehaviour
     {
         if (other.gameObject.tag == tagName)
         {
+            Debug.Log("Jeg luder");
             Moving_Object.drive = true;
         }
     }
