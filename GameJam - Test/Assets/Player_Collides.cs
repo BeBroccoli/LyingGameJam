@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Collsion : MonoBehaviour
+public class Player_Collides : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

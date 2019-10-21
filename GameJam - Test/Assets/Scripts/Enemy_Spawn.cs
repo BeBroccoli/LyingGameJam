@@ -11,6 +11,7 @@ public class Enemy_Spawn : MonoBehaviour
     {
         if (other.gameObject.tag == tagName)
         {
+            Debug.Log(other.gameObject.name);
             Destroy(this.gameObject);
             isDead = true;
         }

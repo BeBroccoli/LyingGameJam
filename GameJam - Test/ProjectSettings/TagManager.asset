@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cursor
+  - FlashLight
   layers:
   - Default
   - TransparentFX

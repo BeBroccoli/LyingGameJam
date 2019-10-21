@@ -51,13 +51,5 @@ public class Movement : MonoBehaviour
                 transform.Rotate(Vector3.up * 180);
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-
-        }
-
-
-
     }
 }

@@ -19,10 +19,9 @@ public class Follow_Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-
-       
+        if (Movement.insanity >= 25)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        }
     }
-
-    
 }
